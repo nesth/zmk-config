@@ -10,7 +10,7 @@
 
 / {
         behaviors {
-                ht: positional_hold_tap {
+                ht: hold_tap {
                    compatible = "zmk,behaviors-hold-tap";
                    label = "HOLD_TAP";
                    #binding-cells = <2>;
@@ -33,7 +33,7 @@
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &ht LSHFT LPAR &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT RPAR
+   &ht LSHFT LPAR &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &ht RSHFT RPAR
                   &ht LGUI ESC &mo 1 &kp SPACE   &kp RET &mo 2 &ht RALT :
                         >;
                 };
