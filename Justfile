@@ -18,7 +18,7 @@ _parse_targets $expr: _check_yq_version
 # build firmware for single board & shield combination
 _build_single $board $shield $snippet $artifact cmake_args *west_args:
     #!/usr/bin/env bash
-    set -euo pipefail
+    set -euox pipefail
     artifact="${artifact:-${shield:+${shield// /+}-}${board//\//_}}"
     build_dir="{{ build / '$artifact' }}"
 
