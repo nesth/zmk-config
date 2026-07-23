@@ -14,7 +14,7 @@
 ---
 include:
   # boardsource
-  - board: blecorn_left
+  - board: blecorne_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     shield: nice_view
