@@ -14,7 +14,7 @@
 ---
 include:
   # boardsource
-  - board: blecorn_left@1.0.0//zmk
+  - board: blecorn_left
     vendor: boardsource
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
