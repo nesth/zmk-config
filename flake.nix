@@ -40,6 +40,8 @@
               pkgs.gcc
               pkgs.ninja
 
+              pkgs.python3Packages.grpcio-tools
+
               pkgs.just
               pkgs.yq # Make sure yq resolves to python-yq.
 
@@ -57,7 +59,7 @@
             ];
 
           env = {
-            PYTHONPATH = "${zephyr.pythonEnv}/${zephyr.pythonEnv.sitePackages}";
+            PYTHONPATH = "${zephyr.pythonEnv}/${zephyr.pythonEnv.sitePackages}:${pkgs.python3Packages.grpcio-tools}/${pkgs.python3.sitePackages}";
           };
 
           shellHook = ''
