@@ -41,9 +41,9 @@ manifest:
 #    - name: zmk-auto-layer
 #      path: modules/zmk/auto-layer
 #      revision: dfa7c695ffde41ef8064245453595d50e198ae1d # main (4/19/2026)
-#    - name: zmk-helpers
-#      path: modules/zmk/helpers
-#      revision: 0b9e9d1dd9e86f70b4c8c2b0fab55c4f90c9d2e3 # main (4/19/2026)
+    - name: zmk-helpers
+      path: modules/zmk/helpers
+      revision: 0b9e9d1dd9e86f70b4c8c2b0fab55c4f90c9d2e3 # main (4/19/2026)
 #    - name: zmk-leader-key
 #      path: modules/zmk/leader-key
 #      revision: 749f7faf65cc4105c82fbe64cfaa7e09a8a63605 # main (4/19/2026)
