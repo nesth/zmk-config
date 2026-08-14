@@ -313,6 +313,7 @@ text.br, use.br { fill: var(--color-sys); }
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="1" class="key tap">Enter</text>
+<text x="0" y="36" class="key hold">fn</text>
 <text x="-22" y="-36" class="key tl">Enter</text>
 <text x="22" y="-36" class="key tr">Enter</text>
 </g>
