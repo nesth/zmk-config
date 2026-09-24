@@ -86,6 +86,10 @@ ZMK_MOD_MORPH(magic_shift_tap, bindings = <&sk LSHFT>, <&caps_word>;
   /delete-property/ ignore-modifiers;
 };
 
+// Tap/hold: LOWER layer | Double-tap: ctrl+b (herdr prefix).
+ZMK_TAP_DANCE(td_lower, tapping-term-ms = <200>;
+              bindings = <&mo LOWER>, <&kp LC(B)>;)
+
 ZMK_CONDITIONAL_LAYER(sys, LOWER UPPER, SYS)
 
 // LT/LM/LB = left top/mid/bot (6 keys each), RT/RM/RB = right, LH/RH = thumbs (3 each)
@@ -100,7 +104,7 @@ CORNE_LAYER(default,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT   ,
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &mt LGUI ESC  &mo LOWER     &kp SPACE   ,   &lt FN RET    &mo UPPER     &mt RALT COLON
+                                              &mt LGUI ESC  &td_lower     &kp SPACE   ,   &lt FN RET    &mo UPPER     &mt RALT COLON
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
